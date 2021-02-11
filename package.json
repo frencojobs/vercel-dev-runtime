@@ -1,6 +1,6 @@
 {
   "name": "vercel-dev-runtime-debug",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A fork of vercel-dev-runtime for debug purposes only",
   "main": "index.js",
   "keywords": [
