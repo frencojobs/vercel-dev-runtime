@@ -1,16 +1,8 @@
 {
-  "name": "vercel-dev-runtime-debug",
-  "version": "0.0.1",
-  "description": "A fork of vercel-dev-runtime for debug purposes only",
+  "name": "@frenco/vercel-dev-runtime",
+  "version": "0.0.0",
+  "description": "A fork of vercel-dev-runtime",
   "main": "index.js",
-  "keywords": [
-    "vercel",
-    "vc",
-    "runtime",
-    "builder",
-    "local",
-    "development"
-  ],
   "author": "Frenco <hey@frenco.dev>",
   "license": "MIT"
 }
