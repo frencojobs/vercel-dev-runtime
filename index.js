@@ -6,6 +6,11 @@ const {
 } = require('@vercel/build-utils');
 
 async function build(opts) {
+	console.log(
+		"You're using the vercel-dev-runtime-debug, a debug version of vercel-dev-runtime"
+	);
+	console.log('Do not use this in production!');
+
 	const { files, workPath, meta } = opts;
 	await download(files, workPath, meta);
 
