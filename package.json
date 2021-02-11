@@ -1,6 +1,6 @@
 {
   "name": "@frenco/vercel-dev-runtime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A fork of vercel-dev-runtime",
   "main": "index.js",
   "author": "Frenco <hey@frenco.dev>",
