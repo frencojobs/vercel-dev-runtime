@@ -3,7 +3,7 @@ const {
 	download,
 	runNpmInstall,
 	runPackageJsonScript,
-} = require('@vercel/build-utils');
+} = require('@frenco/build-utils');
 
 async function build(opts) {
 	console.log("You're using @frenco/vercel-dev-runtime,");

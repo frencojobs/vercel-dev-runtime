@@ -4,5 +4,8 @@
   "description": "A fork of vercel-dev-runtime",
   "main": "index.js",
   "author": "Frenco <hey@frenco.dev>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@frenco/build-utils": "^0.0.1"
+  }
 }
