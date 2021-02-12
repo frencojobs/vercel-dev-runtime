@@ -3,7 +3,7 @@ const {
 	download,
 	runNpmInstall,
 	runPackageJsonScript,
-} = require('@frenco/build-utils');
+} = require('@vercel/build-utils');
 
 async function build(opts) {
 	console.log("You're using @frenco/vercel-dev-runtime,");
@@ -18,7 +18,11 @@ async function build(opts) {
 	await runNpmInstall(workPath, ['--prefer-offline'], {}, meta);
 	console.log(`Install complete [${Date.now() - installTime}ms]`);
 
-	await runPackageJsonScript(workPath, 'build');
+	try {
+		await runPackageJsonScript(workPath, 'build');
+	} catch (e) {
+		console.log('Error on package json script: ', JSON.stringify(e));
+	}
 
 	// TODO: purge the require cache before require() when `meta.isDev`
 	const builder = require(workPath);
